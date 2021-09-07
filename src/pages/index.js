@@ -10,6 +10,11 @@ const IndexPage = () => {
             pageTitle={"Home page"}
         >
             <p>I'm making this by following the Gatsby Tutorial.</p>
+            <p>
+                <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
+                <br />
+                <Link to="/blog/my-second-post/">Go to my second Markdown blog post</Link>
+            </p>
         </Layout>
     )
 }

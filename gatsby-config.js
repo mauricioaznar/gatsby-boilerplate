@@ -33,5 +33,22 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `./src/markdown-pages`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        tableOfContents: {
+          heading: null,
+          maxDepth: 6,
+        },
+        plugins: ['gatsby-remark-code-buttons']
+      }
+    }
   ],
 };
