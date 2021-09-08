@@ -9,34 +9,40 @@ export default function Template({
     const { frontmatter, html, headings } = markdownRemark
 
     const HeadingsList = () => (
-        <ul>
-            {
-                headings.map(
-                    heading => (
-                        <li
-                            key={heading.id}
-                        >
-                            <a
-                                href={`#${heading.id}`}
+        <div className="markdown-pages-toc">
+            <h2>
+                Table of contents
+            </h2>
+            <ul >
+                {
+                    headings.map(
+                        heading => (
+                            <li
+                                className={`ml-${(3 * (heading.depth - 1))}`}
+                                key={heading.id}
                             >
-                                { heading.value }
-                            </a>
-                        </li>
+                                <a
+                                    href={`#${heading.id}`}
+                                >
+                                    { heading.value }
+                                </a>
+                            </li>
+                        )
                     )
-                )
-            }
-        </ul>
+                }
+            </ul>
+        </div>
     )
 
     return (
         <MLayout>
-            <div className="blog-post-container">
-                <div className="blog-post">
+            <div className="markdown-pages">
+                <div>
                     <h2 className="my-0 mb-1">{frontmatter.title}, </h2>
                     <h3 className="my-0 mb-2">{frontmatter.date}</h3>
                     <HeadingsList />
                     <div
-                        className="blog-post-content"
+                        className="markdown-pages-content"
                         dangerouslySetInnerHTML={{ __html: html }}
                     />
                 </div>

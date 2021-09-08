@@ -1,4 +1,5 @@
 import * as React from 'react'
+import logo from '../images/icon.png'
 import { Link } from 'gatsby'
 
 const MLayout = ({ pageTitle, children }) => {
@@ -40,13 +41,16 @@ const MLayout = ({ pageTitle, children }) => {
                         )
                     }
                 </ul>
-                <div className="flex-1 text-center">
+                <div className="flex-1 h-16 flex flex-row justify-center">
                     <Link
+                        className="h-full w-16"
                         to={"/"}
                     >
-                        <h1>
-                            Some company name
-                        </h1>
+                        <img
+                            className="object-contain w-full min-h-0"
+                            src={logo}
+                            alt={"gatsby"}
+                        />
                     </Link>
                 </div>
             </nav>

@@ -15,7 +15,7 @@
     @apply font-display text-5xl text-violet-700 my-4;
   }
   h3 {
-    @apply font-mono text-2xl text-pink-300 my-2;
+    @apply font-mono text-2xl text-violet-300 my-2;
   }
 }
 
@@ -48,4 +48,29 @@ pre {
 
   @apply font-sans text-red-400 text-base;
 
+}
+
+.markdown-pages.toc {
+  @apply my-5;
+}
+
+.markdown-pages-content h1 {
+  @apply font-mono text-6xl text-pink-900 my-8;
+}
+.markdown-pages-content h2 {
+  @apply font-mono text-5xl text-pink-700 my-6;
+}
+.markdown-pages-content h3 {
+  @apply font-mono text-4xl text-pink-600 my-5;
+}
+.markdown-pages-content h4 {
+  @apply font-mono text-3xl text-pink-500 my-4;
+}
+
+.markdown-pages-content h5 {
+  @apply font-mono text-2xl text-pink-400 my-4;
+}
+
+.markdown-pages-content h6 {
+  @apply font-mono text-2xl text-pink-200 my-4;
 }

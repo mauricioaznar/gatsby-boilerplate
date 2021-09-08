@@ -9,20 +9,32 @@ const IndexPage = (props) => {
         },
     } = props;
 
-    const Posts = edges
-        .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-        .map(({node}) => (
-            <Link
-                key={node.id}
-                to={node.frontmatter.slug}
-                className="text-blue-300 hover:text-blue-500"
-            >
-                {node.frontmatter.title} ({node.frontmatter.date})
-            </Link>
-        ))
+    const PostsList = () => {
+        return (
+            <ul>
+                {
+                    edges
+                        .filter(edge => !!edge.node.frontmatter.date)
+                        .map(({node}) => (
+                            <li
+                                key={node.id}
+                            >
+                                <Link
+
+                                    to={node.frontmatter.slug}
+                                    className="text-blue-300 hover:text-blue-500"
+                                >
+                                    {node.frontmatter.title} ({node.frontmatter.date})
+                                </Link>
+                            </li>
+                        ))
+                }
+            </ul>
+        )
+    }
 
     return <MLayout pageTitle={"Posts"}>
-        <div>{Posts}</div>
+        <PostsList />
         <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
     </MLayout>
 }
