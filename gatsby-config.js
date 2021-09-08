@@ -55,6 +55,12 @@ module.exports = {
                 },
                 plugins: [
                     {
+                        resolve: 'gatsby-remark-code-titles',
+                        options: {
+                            className: 'gatsby-remark-code-title',
+                        },
+                    },
+                    {
                         resolve: "gatsby-remark-code-buttons",
                         options: {
                             tooltipText: `Copy to clipboard`,

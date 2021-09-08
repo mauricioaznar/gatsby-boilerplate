@@ -12,7 +12,7 @@ export default function Template({
             <div className="blog-post-container">
                 <div className="blog-post">
                     <h2 className="my-0 mb-1">{frontmatter.title}, </h2>
-                    <h3 className="text-base my-0 mb-2">{frontmatter.date}</h3>
+                    <h3 className="my-0 mb-2">{frontmatter.date}</h3>
                     <div
                         className="blog-post-content"
                         dangerouslySetInnerHTML={{ __html: html }}
