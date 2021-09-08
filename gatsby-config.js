@@ -21,8 +21,6 @@ module.exports = {
             },
         },
         "gatsby-plugin-mdx",
-        "gatsby-plugin-sharp",
-        "gatsby-transformer-sharp",
         {
             resolve: "gatsby-source-filesystem",
             options: {
@@ -31,6 +29,8 @@ module.exports = {
             },
             __key: "images",
         },
+        "gatsby-plugin-sharp",
+        "gatsby-transformer-sharp",
         {
             resolve: "gatsby-source-filesystem",
             options: {
@@ -49,10 +49,6 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-                tableOfContents: {
-                    heading: null,
-                    maxDepth: 6,
-                },
                 plugins: [
                     {
                         resolve: 'gatsby-remark-code-titles',

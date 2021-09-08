@@ -9,10 +9,10 @@
     @apply font-serif;
   }
   h1 {
-    @apply font-display text-5xl;
+    @apply font-display text-6xl;
   }
   h2 {
-    @apply font-mono text-4xl text-violet-700 my-4;
+    @apply font-display text-5xl text-violet-700 my-4;
   }
   h3 {
     @apply font-mono text-2xl text-pink-300 my-2;
