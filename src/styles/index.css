@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@500&family=Glory:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  p {
+    @apply font-serif;
+  }
+  h1 {
+    @apply font-display text-5xl;
+  }
+  h2 {
+    @apply font-mono text-4xl text-violet-700 my-4;
+  }
+  h3 {
+    @apply font-mono text-3xl text-pink-400;
+  }
+}
+
 
 .gatsby-code-button-container {
   touch-action: none;

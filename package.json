@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "tailwind": "npx tailwindcss build src/styles/index.css -o .tailwind/tailwind.css",
     "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",

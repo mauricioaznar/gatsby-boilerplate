@@ -9,10 +9,13 @@ module.exports = {
       blue: colors.lightBlue,
       red: colors.rose,
       pink: colors.fuchsia,
+      violet: colors.violet
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['"Glory"', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      display: ['"Cinzel Decorative"'],
+      mono: ['"Dancing Script"'],
     },
     extend: {
       spacing: {

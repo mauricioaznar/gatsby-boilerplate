@@ -1,11 +1,11 @@
 // Step 1: Import React
 import * as React from 'react'
-import Layout from "../components/layout";
+import MLayout from "../components/m-layout";
 
 // Step 2: Define your component
 const AboutPage = () => {
     return (
-        <Layout pageTitle={"About me"}>
+        <MLayout pageTitle={"About me"}>
             <div className="min-h-screen bg-gray-100 flex items-center overflow-hidden py-20">
                 <div className="container mx-auto max-w-sm bg-white rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transform transition-all duration-500">
                     <div className="flex items-center justify-between px-4">
@@ -25,7 +25,7 @@ const AboutPage = () => {
                         </div>
                 </div>
             </div>
-        </Layout>
+        </MLayout>
     )
 }
 
