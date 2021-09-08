@@ -8,7 +8,12 @@ module.exports = {
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
-        "gatsby-plugin-sass",
+        {
+            resolve: 'gatsby-plugin-postcss',
+            options: {
+                postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+            },
+        },
         {
             resolve: "gatsby-plugin-manifest",
             options: {
