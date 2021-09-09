@@ -34,6 +34,22 @@ export default function Template({
         }, [y]
     );
 
+    const handleLinkClick = (e, id) => {
+        if (isBrowser) {
+            e.preventDefault();
+            if (typeof id === 'string') {
+                const element = document.getElementById(id);
+                if (element !== null) {
+                    const viewportOffset = element.getBoundingClientRect();
+                    const top = viewportOffset.top;
+                    window.scrollTo({top: top, behavior: 'smooth'});
+                }
+            } else {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        }
+    }
+
     useEffect(() => {
         if (isBrowser) {
             setY(window.scrollY);
@@ -68,6 +84,7 @@ export default function Template({
                                                 key={heading.id}
                                             >
                                                 <a
+                                                    onClick={(e) => {handleLinkClick(e, heading.id)}}
                                                     className="m-link"
                                                     href={`#${heading.id}`}
                                                 >
@@ -87,7 +104,7 @@ export default function Template({
                     dangerouslySetInnerHTML={{__html: html}}
                 />
                 <div className={`fixed bottom-2 right-2 ${(isAfter ? 'visible' : 'hidden')}`}>
-                    <a href="#top">
+                    <a href="#top" onClick={(e) =>{ handleLinkClick(e, 0) }}>
                         <button
                             className="bg-blue-500 hover:bg-blue-700 text-white font-sans font-bold py-2 px-4 rounded text-gray-50"
                             >
