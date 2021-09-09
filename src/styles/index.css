@@ -15,10 +15,20 @@
     @apply font-display text-5xl text-violet-700 my-4;
   }
   h3 {
-    @apply font-mono text-2xl text-violet-300 my-2;
+    @apply font-mono text-4xl text-violet-300 my-2;
+  }
+  h4{
+    @apply font-mono text-2xl text-violet-200 my-2;
+  }
+  h5{
+    @apply font-mono text-base text-violet-200 my-2;
   }
 }
 
+
+.m-link {
+  @apply text-blue-300 hover:text-blue-500;
+}
 
 .gatsby-code-button-container {
   touch-action: none;
@@ -50,27 +60,24 @@ pre {
 
 }
 
-.markdown-pages.toc {
-  @apply my-5;
-}
 
 .markdown-pages-content h1 {
-  @apply font-mono text-6xl text-pink-900 my-8;
+  @apply font-mono text-4xl text-pink-900 my-8;
 }
 .markdown-pages-content h2 {
-  @apply font-mono text-5xl text-pink-700 my-6;
+  @apply font-mono text-3xl text-pink-700 my-6;
 }
 .markdown-pages-content h3 {
-  @apply font-mono text-4xl text-pink-600 my-5;
+  @apply font-mono text-2xl text-pink-600 my-5;
 }
 .markdown-pages-content h4 {
-  @apply font-mono text-3xl text-pink-500 my-4;
+  @apply font-mono text-base text-pink-500 my-4;
 }
 
 .markdown-pages-content h5 {
-  @apply font-mono text-2xl text-pink-400 my-4;
+  @apply font-mono text-sm text-pink-400 my-4;
 }
 
 .markdown-pages-content h6 {
-  @apply font-mono text-2xl text-pink-200 my-4;
+  @apply font-mono text-xs text-pink-200 my-4;
 }

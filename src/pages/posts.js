@@ -22,7 +22,7 @@ const IndexPage = (props) => {
                                 <Link
 
                                     to={node.frontmatter.slug}
-                                    className="text-blue-300 hover:text-blue-500"
+                                    className="m-link"
                                 >
                                     {node.frontmatter.title} ({node.frontmatter.date})
                                 </Link>
