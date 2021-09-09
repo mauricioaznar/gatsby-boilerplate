@@ -16,10 +16,9 @@ const MLayout = ({ pageTitle, pageSubtitle, children }) => {
     ]
 
     return (
-        <div className="mx-auto container">
-            <div id="top"/>
+        <div className="mx-auto container mt-6 lg:max-w-screen-lg">
             <title>{pageTitle}</title>
-            <nav className="flex p-7 bg-gray-200 rounded my-6 items-center">
+            <nav className="flex p-7 bg-gray-200 rounded items-center">
                 <ul className="flex">
                     {
                         links.map(

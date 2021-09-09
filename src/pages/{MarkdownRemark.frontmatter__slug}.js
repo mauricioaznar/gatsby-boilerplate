@@ -24,7 +24,7 @@ export default function Template({
                 } else if (y < window.scrollY) {
                 }
                 const clientHeight = document.documentElement.clientHeight;
-                if (y > clientHeight / 2) {
+                if (y > clientHeight / 3) {
                     setIsAfter(true)
                 } else {
                     setIsAfter(false)
@@ -68,7 +68,7 @@ export default function Template({
     return (
         <MLayout pageTitle={frontmatter.title} pageSubtitle={frontmatter.date}>
 
-            <div className="markdown-pages">
+            <div className="markdown-pages mb-16">
                 {
                     headings.length > 0 ?
                         (<div className="markdown-pages-toc mb-8">
