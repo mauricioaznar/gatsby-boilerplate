@@ -33,7 +33,7 @@
 .gatsby-code-button-container {
   touch-action: none;
   display: flex;
-  justify-content: flex-end;
+  justify: flex-end;
   position: relative;
   top: 28px;
   right: 3px;
@@ -60,24 +60,23 @@ pre {
 
 }
 
-
-.markdown-pages-content h1 {
-  @apply font-mono text-4xl text-pink-900 my-8;
+.markdown-pages h1 {
+  @apply font-mono text-4xl text-pink-900 my-6;
 }
-.markdown-pages-content h2 {
-  @apply font-mono text-3xl text-pink-700 my-6;
+.markdown-pages h2 {
+  @apply font-mono text-3xl text-pink-700 my-6 ml-4;
 }
-.markdown-pages-content h3 {
-  @apply font-mono text-2xl text-pink-600 my-5;
+.markdown-pages h3 {
+  @apply font-mono text-2xl text-pink-600 my-5 ml-8;
 }
-.markdown-pages-content h4 {
-  @apply font-mono text-base text-pink-500 my-4;
-}
-
-.markdown-pages-content h5 {
-  @apply font-mono text-sm text-pink-400 my-4;
+.markdown-pages h4 {
+  @apply font-mono text-base text-pink-500 my-4 ml-12;
 }
 
-.markdown-pages-content h6 {
-  @apply font-mono text-xs text-pink-200 my-4;
+.markdown-pages h5 {
+  @apply font-mono text-sm text-pink-400 my-4 ml-16;
+}
+
+.markdown-pages h6 {
+  @apply font-mono text-xs text-pink-200 my-4 ml-24;
 }

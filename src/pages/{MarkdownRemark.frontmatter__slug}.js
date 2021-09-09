@@ -47,15 +47,15 @@ export default function Template({
 
     return (
         <MLayout>
+            <div id="top"/>
+            <h2 className="my-0 mb-1">{frontmatter.title}</h2>
+            <h5 className="my-0 mb-8">{frontmatter.date}</h5>
             <div className="markdown-pages">
                 <div>
-                    <div id="top"/>
-                    <h2 className="my-0 mb-1">{frontmatter.title}</h2>
-                    <h5 className="my-0 mb-8">{frontmatter.date}</h5>
                     <div className="mb-8">
-                        <h3>
+                        <h2 className="mx-0 ml-1">
                             Table of contents
-                        </h3>
+                        </h2>
                         <ul>
                             {
                                 headings.map(

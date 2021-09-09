@@ -6,7 +6,7 @@ title: "My first blog post"
 
 Hello World!
 
-```js:title=poop.js
+```js:title=litte-marmaid.js
 const a = '';
 
 for (let i = 0; i < 20; i ++) {
