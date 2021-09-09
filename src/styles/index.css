@@ -9,7 +9,7 @@
     @apply font-serif;
   }
   h1 {
-    @apply font-display text-6xl;
+    @apply font-display text-6xl my-6;
   }
   h2 {
     @apply font-display text-5xl text-violet-700 my-4;
@@ -56,27 +56,43 @@ pre {
   margin-bottom: -1rem;
   padding: 0.5em 0.5em 0.2em 0.5em;
 
-  @apply font-sans text-red-400 text-base;
+  @apply font-serif text-red-400 text-sm ml-4;
 
 }
 
 .markdown-pages h1 {
-  @apply font-mono text-4xl text-pink-900 my-6;
+  @apply font-mono text-4xl text-pink-700;
 }
 .markdown-pages h2 {
-  @apply font-mono text-3xl text-pink-700 my-6 ml-4;
+  @apply font-mono text-3xl text-pink-600 ml-8;
 }
 .markdown-pages h3 {
-  @apply font-mono text-2xl text-pink-600 my-5 ml-8;
+  @apply font-mono text-2xl text-pink-500 ml-16;
 }
+
 .markdown-pages h4 {
-  @apply font-mono text-base text-pink-500 my-4 ml-12;
+  @apply font-mono text-base text-pink-400 ml-24;
 }
 
 .markdown-pages h5 {
-  @apply font-mono text-sm text-pink-400 my-4 ml-16;
+  @apply font-mono text-base text-pink-200 ml-32;
 }
 
 .markdown-pages h6 {
-  @apply font-mono text-xs text-pink-200 my-4 ml-24;
+  @apply font-mono text-sm text-pink-100 ml-32;
+}
+
+.markdown-pages h2,h3 {
+  @apply mt-8 mb-4;
+}
+.markdown-pages h4,h5,h6 {
+  @apply mt-6 mb-3;
+}
+
+.markdown-pages p {
+  @apply mb-2;
+}
+
+.markdown-pages .markdown-pages-toc-title {
+  @apply mx-0;
 }

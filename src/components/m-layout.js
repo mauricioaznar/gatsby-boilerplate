@@ -2,7 +2,7 @@ import * as React from 'react'
 import logo from '../images/icon.png'
 import { Link } from 'gatsby'
 
-const MLayout = ({ pageTitle, children }) => {
+const MLayout = ({ pageTitle, pageSubtitle, children }) => {
 
     const links = [
         {
@@ -17,6 +17,7 @@ const MLayout = ({ pageTitle, children }) => {
 
     return (
         <div className="mx-auto container">
+            <div id="top"/>
             <title>{pageTitle}</title>
             <nav className="flex p-7 bg-gray-200 rounded my-6 items-center">
                 <ul className="flex">
@@ -54,8 +55,11 @@ const MLayout = ({ pageTitle, children }) => {
                     </Link>
                 </div>
             </nav>
+            <div className="my-12">
+                <h2 className="my-0 mb-1">{pageTitle}</h2>
+                {pageSubtitle ? (<h5 className="my-0">{pageSubtitle}</h5>) : null}
+            </div>
             <main>
-                <h2>{pageTitle}</h2>
                 {children}
             </main>
         </div>
