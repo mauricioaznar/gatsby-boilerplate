@@ -55,7 +55,7 @@ const MLayout = ({ pageTitle, pageSubtitle, children }) => {
                 </div>
             </nav>
             <div className="my-12">
-                <h2 className="my-0 mb-1">{pageTitle}</h2>
+                <h1 className="special-display my-0 mb-1">{pageTitle}</h1>
                 {pageSubtitle ? (<h5 className="my-0">{pageSubtitle}</h5>) : null}
             </div>
             <main>

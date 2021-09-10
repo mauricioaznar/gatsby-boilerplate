@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [require('tailwindcss'), require('autoprefixer')],
+  darkMode: 'class',
   theme: {
     colors: {
       gray: colors.coolGray,

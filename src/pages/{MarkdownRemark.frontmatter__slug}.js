@@ -103,10 +103,10 @@ export default function Template({
                     className="markdown-pages-content"
                     dangerouslySetInnerHTML={{__html: html}}
                 />
-                <div className={`fixed bottom-2 right-2 ${(isAfter ? 'visible' : 'hidden')}`}>
+                <div className={`fixed bottom-2 right-2 transition-opacity duration-500 ${(isAfter ? '' : 'opacity-0')}`}>
                     <a href="#top" onClick={(e) =>{ handleLinkClick(e, 0) }}>
                         <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-sans font-bold py-2 px-4 rounded text-gray-50"
+                            className="animate-bounce bg-blue-500 hover:bg-blue-700 text-white font-sans font-bold py-2 px-4 rounded text-gray-50"
                             >
                             Back to top
                         </button>

@@ -9,13 +9,13 @@
     @apply font-serif;
   }
   h1 {
-    @apply font-display text-6xl my-6;
+    @apply font-mono text-5xl text-violet-600 my-6;
   }
   h2 {
-    @apply font-display text-5xl text-violet-700 my-4;
+    @apply font-mono text-4xl text-violet-500 my-4;
   }
   h3 {
-    @apply font-mono text-4xl text-violet-300 my-2;
+    @apply font-mono text-3xl text-violet-300 my-2;
   }
   h4{
     @apply font-mono text-2xl text-violet-200 my-2;
@@ -25,6 +25,13 @@
   }
 }
 
+
+.special-display {
+  @apply font-display text-5xl text-violet-500;
+}
+.special-display:first-letter {
+  @apply font-display text-7xl text-violet-700;
+}
 
 .m-link {
   @apply text-blue-300 hover:text-blue-500;
@@ -61,6 +68,9 @@ pre {
 }
 
 .markdown-pages h1 {
+  @apply font-mono text-4xl text-pink-700;
+}
+.markdown-pages h1:first-letter {
   @apply font-mono text-4xl text-pink-700;
 }
 .markdown-pages h2 {
