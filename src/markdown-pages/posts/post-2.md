@@ -25,6 +25,14 @@ class SomeWidget extends StatefulWidget {
 ```
 
 
+```dart
+
+class SomeWidget extends StatefulWidget {
+    final String title = "";
+}
+
+```
+
 # title 2
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur deleniti distinctio ducimus explicabo
@@ -43,3 +51,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur de
 ipsam iure magnam maiores minima nemo, provident quae, quasi quibusdam saepe sint! Mollitia nobis quod veniam!Lorem
 ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur deleniti distinctio ducimus explicabo ipsam iure
 magnam maiores minima nemo, provident quae, quasi quibusdam saepe sint! Mollitia nobis quod veniam!
+
+
+# props
+
+What are props? props are blab labl a
+
+```jsx
+<Componet propA={} />
+
+```
