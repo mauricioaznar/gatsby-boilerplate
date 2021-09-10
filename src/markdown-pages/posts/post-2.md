@@ -17,22 +17,6 @@ class SomeWidget extends StatefulWidget {
 ## Dart introduction
 
 
-
-```dart
-class SomeWidget extends StatefulWidget {
-  final String title = "";
-}
-```
-
-
-```dart
-
-class SomeWidget extends StatefulWidget {
-    final String title = "";
-}
-
-```
-
 # title 2
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur deleniti distinctio ducimus explicabo
