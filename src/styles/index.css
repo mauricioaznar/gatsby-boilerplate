@@ -30,7 +30,14 @@
   @apply font-display text-5xl text-violet-500;
 }
 .special-display:first-letter {
-  @apply font-display text-7xl text-violet-700;
+  @apply font-display
+    text-7xl
+    bg-clip-text
+    text-opacity-0
+    text-violet-500
+    bg-gradient-to-b
+    from-violet-900
+    to-violet-400;
 }
 
 .m-link {

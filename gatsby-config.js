@@ -11,7 +11,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-postcss',
             options: {
-                postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+                postCssPlugins: [require('autoprefixer')(), require('tailwindcss')('./tailwind.config.js')],
             },
         },
         {
@@ -73,5 +73,6 @@ module.exports = {
                 ]
             }
         },
+        "gatsby-plugin-offline"
     ],
 };

@@ -49,6 +49,8 @@ const MLayout = ({ pageTitle, pageSubtitle, children }) => {
                         <img
                             className="object-contain w-full min-h-0"
                             src={logo}
+                            width={'100%'}
+                            height={0}
                             alt={"gatsby"}
                         />
                     </Link>
