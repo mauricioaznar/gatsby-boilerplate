@@ -1,4 +1,5 @@
 import * as React from 'react'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import logo from '../images/icon.png'
 import { Link } from 'gatsby'
 
@@ -26,23 +27,29 @@ const MLayout = ({ pageTitle, pageSubtitle, children }) => {
                                 <li
                                     key={link.to}
                                 >
-                                    <Link
+                                    <AniLink
+                                        paintDrip
                                         partiallyActive={true}
-                                        className="p-2 bg-blue-50 hover:bg-blue-200 rounded-full ml-4"
-                                        activeClassName="bg-blue-300 hover:bg-blue-300"
+                                        className="p-2 bg-violet-50 hover:bg-violet-200 rounded-full ml-4"
+                                        activeClassName="bg-violet-300 hover:bg-violet-300"
                                         to={link.to}
+                                        duration={.8}
+                                        hex={"#ffffff"}
                                     >
                                         {
                                             link.label
                                         }
-                                    </Link>
+                                    </AniLink>
                                 </li>
                             )
                         )
                     }
                 </ul>
                 <div className="flex-1 h-16 flex flex-row justify-center">
-                    <Link
+                    <AniLink
+                        paintDrip
+                        hex={"#ffffff"}
+                        duration={.8}
                         className="h-full w-16"
                         to={"/"}
                     >
@@ -53,7 +60,7 @@ const MLayout = ({ pageTitle, pageSubtitle, children }) => {
                             height={0}
                             alt={"gatsby"}
                         />
-                    </Link>
+                    </AniLink>
                 </div>
             </nav>
             <div className="my-12">
