@@ -67,7 +67,6 @@ module.exports = {
                             toasterDuration: 5000,
                         },
                     },
-                    `gatsby-remark-code-titles`,
                     `gatsby-remark-autolink-headers`,
                     {
                         resolve: `gatsby-remark-prismjs`,
@@ -84,7 +83,7 @@ module.exports = {
                     "G-JMDXSEZMR5", // Google Analytics / GA
                 ],
                 pluginConfig: {
-                    head: true,
+                    head: false,
                     anonymize_ip: true,
                 },
             },
