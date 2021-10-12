@@ -13,6 +13,10 @@ const MLayout = ({ pageTitle, pageSubtitle, children }) => {
         {
             to: "/about",
             label: 'About'
+        },
+        {
+            to: "/test",
+            label: 'Testt'
         }
     ]
 
